@@ -1,0 +1,359 @@
+/* Estilização básica, personalize conforme desejado */
+*{
+    box-sizing: border-box;
+    
+}
+
+
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    
+}
+
+header, footer {
+    background-color: #355C7D;
+    color: #F8B195;
+    text-align: center;
+    padding: 1rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+    background-color: #355C7D;
+    border-radius: 15px;
+    margin-top: 11px;
+    box-shadow: 1px 5px 15px #333;
+    
+    
+}
+
+.screen-junior{
+    margin-left: 350px;
+    margin-right: 350px;
+    
+}
+.box-left, .color-um{
+    
+    width: 100%;
+    height: 70px;
+    /* position: absolute;  */
+    margin-top: 10px;   
+    border-radius: 8px;
+    transition: 0.2s;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    
+    
+      
+}
+.box-left-um{
+    display: flex;
+}
+.box-left:hover{
+    transform: scale(1.1);
+}
+
+
+.section-right{
+   
+    position: absolute;
+    top: 111px;
+    width: 20%;
+    
+    left: 77.5vw;
+
+}
+.section-left{
+    /* background-color: brown; */
+    
+    position: absolute;
+    width: 20%;
+    right: 77.1vw;
+    display: flex;
+    flex-direction: column;
+    top: 111px;
+    
+    
+}
+label{
+    color: #f67280;
+    font-weight: 800;
+    font-size: 19px;
+}
+h2{
+    color: #ffb0c7;
+    font-weight: 900;
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.color-tips {  
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;}
+.color-tips h2{
+    color: #6C5B7B;
+}
+
+.color-picker {
+    margin-bottom: 1rem;
+}
+
+.color-display {
+    text-align: center;
+}
+
+#colorPreview {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid #F8B195;
+
+}
+
+.color-palette {
+    text-align: center;
+    margin-top: 0rem;
+    background-color: #355C7D;
+    margin-left: 80px;   
+    margin: 80px;
+    padding: 20px;
+    box-shadow: 1px 5px 15px #6C5B7B;
+    border-radius: 15px;
+}
+ #savePalette {
+     padding: 10px;
+    border-radius: 10px;
+    background-color: #6C5B7B;
+    color: aliceblue;
+    font-weight: 700;
+    cursor: pointer;
+    margin-bottom: 55px;
+    transition: 0.2s;
+    border: 2px solid #C06C84 ;
+} 
+
+
+ #savePalette:hover{
+    background-color: #F8B195;
+}
+#savePalette:active{
+    opacity: 0.8;
+    
+} 
+#updateColorsButton{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #333;
+    border: none;
+    color: aliceblue;
+    font-weight: 700;
+    cursor: pointer;
+    /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); */
+    
+    transition: 0.2s;
+    margin-top: 20px;    
+    
+}
+#updateColorsButton:hover{
+    background-color: #F8B195;
+}
+#updateColorsButton:active{
+    opacity: 0.8;
+    
+} 
+
+
+.palette-color-box {
+  
+    height: 50px;
+    margin: 0.5rem;
+    
+}
+
+.gradient-generator{
+    text-align: center;
+    margin-top: 2rem;
+    background-color: #355C7D;
+    border-radius: 15px;
+    padding: 15px;
+    box-shadow: 1px 5px 15px #333;
+
+    
+}
+#generateGradiente{
+    padding: 10px;
+   border-radius: 10px;
+   background-color: #6C5B7B;
+   border: none;
+   color: aliceblue;
+   font-weight: 700;
+   cursor: pointer;
+   /* box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9); */
+   border: 2px solid #C06C84 ;
+   
+   transition: 0.2s;
+}
+#generateGradiente:hover{
+   background-color: #F8B195;
+}
+#generateGradiente:active{
+   opacity: 0.8;
+}
+
+.gradient-controls{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.gradient-controls label {
+    margin-bottom: 1rem;
+}
+
+.gradiente-display{
+    text-align: center;
+}
+
+#gradientPreview {
+    width: 50%;
+    height: 100px;
+    margin: 0 auto;
+    border: 1px solid #F8B195;
+    
+}
+/*  */
+/*  */
+/* Adicione ao final do arquivo styles.css */
+.color-tips {
+    margin-top: 2rem;
+}
+
+.color-tip {
+    display: none;
+    margin-top: 1rem;
+}
+
+.color-tip h3 {
+    margin-bottom: 0.5rem;
+}
+.color-tips a{
+    text-decoration: none;
+
+}
+.color-tips h3, p{
+    margin-left: 15px;
+}
+.color-tips ul{
+    list-style: none;
+}
+
+.delete-color-button {
+    background-color: #E74C3C;
+    color: white;
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 900;
+    transition: 0.3s;
+}
+.delete-color-button:hover{
+
+transform: scale(1.5);
+}
+
+
+
+/* Estilos para telas menores que 768px (por exemplo, dispositivos móveis) */
+@media (max-width: 1153px) {
+    .screen-junior {
+        margin: 0 20px; /* Reduz as margens laterais para dispositivos menores */
+    }
+    
+    .section-right,
+    .section-left {
+        width: 100%; /* Ocupa a largura total da tela */
+        position: static; /* Remove a posição absoluta para que ocupe o espaço normal */
+        padding-left: 25px;
+        padding-right: 25px;    
+        margin-top: 35px;    
+    }
+    
+    .gradient-controls {
+        flex-direction: column; /* Alinha os controles verticalmente em telas menores */
+    }
+    .color-palette{
+        margin: 0;
+        margin-top: 35px;
+    }
+    header h1{
+        font-size: 50px;
+    }
+    #updateColorsButton{
+        padding: 30px;
+        margin-bottom: 11px;
+        font-size: 20px;
+    }
+    label{
+        font-size: 25px;
+    }
+    .color-palette button{
+        margin-top: 35px;
+        padding: 20px;
+        font-size: 25px;
+    }
+    #generateGradiente{
+        padding: 20px;
+        margin-bottom: 11px;
+        font-size: 20px;
+        margin-top: 11px;
+
+    }
+    h3{
+        font-size: 20px;
+    }
+    #gradientPreview{
+        width: 100%;
+    }
+    .color-tips {
+        margin-left: 15px;
+    }
+
+
+
+}
